@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>俄罗斯方块</title>
+	<link rel="stylesheet" href="css/css.css">
+	<style>
+		#box{
+			position:relative;
+			width:280px;
+			height:465px;
+		}
+		#mask{
+			width:200px;
+			height:150px;
+			font-size:28px;
+			text-align:center;
+			position:absolute;
+			top:50%;
+			left:50%;
+			margin-top:-75px;
+			margin-left:-100px;
+			color:rgb(186,135,76);
+			background-color: rgb(255,254,160);
+			display:none;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div id="mask">
+			<p>GAME OVER</p>
+			<p id = "df">得分：0</p>
+		</div>
+	</div>
+	<audio id = "zidong" src="music/bgm.mp3" autoplay loop></audio>
+	<audio id = "anjian" src="music/anjian.mp3"></audio>
+	<audio id = "xh" src="music/xiaohang.mp3" ></audio>
+	<script src ="js/blocktypes.js"></script>
+	<script src ="js/Game.js"></script>
+	<script src ="js/block.js"></script>
+	<script src = "js/Map.js"></script>
+	<script>
+		new Game();
+	</script>
+</body>
+</html>
